@@ -32,14 +32,13 @@ public class Usuario {
 	@Size(min = 2, max = 50)
 	private String cargo; // Para verificar o cargo/profissão da usuária na rede social.
 	
-	@Email				   					//Valida que é um campo de e-mail
-	@Column(unique = true) 					//Garante que o e-mail não seja duplicado.  
 	@NotBlank
-	@Size(min = 8 , max = 1000)
-	private String email; // Para o cadastro de acesso da usuária na rede social. Terá no máximo 1000 caracteres.
+	@Email
+	@Size(min = 5, max = 100)
+	private String usuario;
 	
 	@NotBlank
-	@Size(min = 6, max = 20)
+	@Size(min = 5, max = 100)
 	private String senha; // Será usado para segurança e entrada da usuária na rede social. Terá no máximo 20 caracteres
 	
 	@Size(min = 5, max = 2000)
@@ -49,12 +48,9 @@ public class Usuario {
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
+	
 
 	//Início getters and setters
-
-	public String getNomeCompleto() {
-		return nomeCompleto;
-	}
 
 	public long getId() {
 		return id;
@@ -62,6 +58,10 @@ public class Usuario {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public String getNomeCompleto() {
+		return nomeCompleto;
 	}
 
 	public void setNomeCompleto(String nomeCompleto) {
@@ -76,12 +76,12 @@ public class Usuario {
 		this.cargo = cargo;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
 	public String getSenha() {
@@ -99,7 +99,7 @@ public class Usuario {
 	public void setLink(String link) {
 		this.link = link;
 	}
-	
+
 	public List<Postagem> getPostagem() {
 		return postagem;
 	}

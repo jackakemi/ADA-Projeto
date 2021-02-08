@@ -1,8 +1,7 @@
 package com.ada.ADA.controller;
 
 import java.util.List;
-
-import javax.annotation.security.PermitAll;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,16 +16,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ada.ADA.model.UserLogin;
 import com.ada.ADA.model.Usuario;
 import com.ada.ADA.repository.UsuarioRepository;
+import com.ada.ADA.service.UsuarioService;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/usuario")
 public class UsuarioController {
 
 	@Autowired
 	private UsuarioRepository repository;
+	
+	@Autowired
+	private UsuarioService usuarioService;
 	
 	@GetMapping
 	public ResponseEntity<List<Usuario>> getAll() {
@@ -43,11 +47,6 @@ public class UsuarioController {
 	@GetMapping("/cargo/{cargo}")
 	public ResponseEntity<List<Usuario>> getByCargo (@PathVariable String cargo) {
 		return ResponseEntity.ok(repository.findAllBycargoContainingIgnoreCase(cargo));
-	}
-	
-	@GetMapping("/email/{email}")
-	public ResponseEntity<List<Usuario>> getByEmail (@PathVariable String email) {
-		return ResponseEntity.ok(repository.findAllByemailContainingIgnoreCase(email));
 	}
 	
 	@GetMapping("/nome/{nome}")
@@ -68,6 +67,23 @@ public class UsuarioController {
 	@DeleteMapping("/{id}")
 	public void delete (@PathVariable long id) {
 		repository.deleteById(id);
+	}
+	
+	@PostMapping("/cadastro")
+	public ResponseEntity<Usuario> Post (@RequestBody Usuario usuario) {
+		Optional<Usuario> user = usuarioService.CadastrarUsuario(usuario);
+		try {
+			return ResponseEntity.ok(user.get());
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().build();
+		}
+
+	}
+
+	@PostMapping("/login")
+	public ResponseEntity<UserLogin> Autentication (@RequestBody Optional<UserLogin> user) {
+		return usuarioService.Logar(user).map(resp -> ResponseEntity.ok(resp))
+				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
 	}
 	
 }

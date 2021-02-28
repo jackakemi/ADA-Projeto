@@ -22,7 +22,7 @@ O projeto tem como finalidade criar uma **rede de comunidade para mulheres no me
 
 
 #### **Backend:** [Spring Boot](https://spring.io/projects/spring-boot) + [Java 8](https://www.java.com/pt-BR/) + [MySQL](https://www.mysql.com/)
-#### **Frotend:** [Angular](https://angular.io/) Em construção 🚧
+#### **Frontend:** [Angular](https://angular.io/) Em construção 🚧
 
 
 ## **:wine_glass: COMO UTILIZAR**

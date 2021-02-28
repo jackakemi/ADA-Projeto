@@ -4,7 +4,7 @@
 
 <h3 align="center">
 
-👩‍💻 ADA é um projeto **Open Source** desenvolvido durante o curso da **[Generation Brasil](https://brazil.generation.org/)**  utilizando as tecnologias ***Java, Spring Boot, REST API e MySQL***.
+👩‍💻 ADA é um projeto desenvolvido durante o curso da **[Generation Brasil](https://brazil.generation.org/)**  utilizando as tecnologias ***Java, Spring Boot, REST API e MySQL***.
 
 </h3>
 
@@ -49,6 +49,7 @@ Após ter o **Java** instalado, inicie o programa no seu editor de preferência 
     <th><strong>Danilo Mendes</strong></th>
     <th><strong>Jackeline Akemi</strong></th>
     <th><strong>Vinicius Miranda </strong></th>
+    <th><strong>Beymar Jhoel</strong></th>
   </tr>
   <tr align=center>
     <td>
@@ -71,9 +72,13 @@ Após ter o **Java** instalado, inicie o programa no seu editor de preferência 
         <img width="200" height="180" src="https://avatars.githubusercontent.com/u/74925023?s=460&u=bf8eb549a7887ae2b9562ffe3fba759312e54ba1&v=4">
       </a>
     </td>
+      <td>
+      <a href="https://github.com/beymarjhoel">
+        <img width="200" height="180" src="https://avatars.githubusercontent.com/u/73513364?s=460&u=b99a4850857959fe42ca66b94b6a30a2e202100f&v=4">
+      </a>
+    </td>
   </tr>
 </table>
-
 </div>
 
 

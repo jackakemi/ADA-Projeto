@@ -25,7 +25,7 @@ O projeto tem como finalidade criar uma **rede de comunidade para mulheres no me
 #### **Frontend:** [Angular](https://angular.io/) Em construção 🚧
 
 
-## **:wine_glass: COMO UTILIZAR**
+## **:heavy_check_mark: COMO UTILIZAR**
 
 ### Configurações Iniciais
 
@@ -34,20 +34,7 @@ Primeiro, você precisa ter o <kbd>[Java 8 + ](https://www.java.com/pt-BR/)</kbd
 
 Após ter o **Java** instalado, inicie o programa no seu editor de preferência e ele será inicializado no localhost:8080, assim poderá testar todos os endpoints contruídos:
 
-- **(POST)** /postagem
- {
-    "descricaoPostagem": "descreva aqui sua postagem...",
-    "usuario":{
-        "id": 1
-    } ,
-    "tema":{
-        "id": 1
-    } 
-}
-
-- **(GET)**  /tema
-- **(GET)** /usuario
-
+- Collection: 
 
 
 ## **:star2: DESENVOLVEDORES**

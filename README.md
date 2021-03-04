@@ -70,22 +70,22 @@ Após ter o **Java** instalado, inicie o programa no seu editor de preferência 
     </td>
     <td>
       <a href="https://github.com/DaniloMendesF">
-        <img width="200" height="180" src="https://avatars.githubusercontent.com/u/70661440?s=460&u=e8cbdb61d169a81d0cdcb5236b993eba4c880672&v=4">
+        <img width="200" src="https://avatars.githubusercontent.com/u/70661440?s=460&u=e8cbdb61d169a81d0cdcb5236b993eba4c880672&v=4">
       </a>
     </td>
     <td>
       <a href="https://github.com/jackakemi">
-        <img width="200" height="180" src="https://avatars.githubusercontent.com/u/68870912?s=460&u=f2b22360ef7a6f5b32fe5d26757225b8d28a6108&v=4">
+        <img width="200" src="https://avatars.githubusercontent.com/u/68870912?s=460&u=f2b22360ef7a6f5b32fe5d26757225b8d28a6108&v=4">
       </a>
     </td>
     <td>
       <a href="https://github.com/vini-miranda">
-        <img width="200" height="180" src="https://avatars.githubusercontent.com/u/74925023?s=460&u=bf8eb549a7887ae2b9562ffe3fba759312e54ba1&v=4">
+        <img width="200" src="https://avatars.githubusercontent.com/u/74925023?s=460&u=bf8eb549a7887ae2b9562ffe3fba759312e54ba1&v=4">
       </a>
     </td>
       <td>
       <a href="https://github.com/beymarjhoel">
-        <img width="200" height="180" src="https://avatars.githubusercontent.com/u/73513364?s=460&u=b99a4850857959fe42ca66b94b6a30a2e202100f&v=4">
+        <img width="200" src="https://avatars.githubusercontent.com/u/73513364?s=460&u=b99a4850857959fe42ca66b94b6a30a2e202100f&v=4">
       </a>
     </td>
   </tr>

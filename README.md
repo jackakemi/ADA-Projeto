@@ -51,7 +51,7 @@ Após ter o **Java** instalado, inicie o programa no seu editor de preferência 
   </tr>
   <tr align=center>
     <td>
-      <a href="https://github.com/Rafaelaoliveira-1" target="_blank">
+      <a href="https://github.com/Rafaelaoliveira-1">
         <img width="200" src="https://avatars.githubusercontent.com/u/68602464?s=400&u=8a16462cb41f0a7fa04113f8cec1643905ae3b0b&v=4">
       </a>
     </td>

@@ -34,7 +34,7 @@ Primeiro, você precisa ter o <kbd>[Java 8 + ](https://www.java.com/pt-BR/)</kbd
 
 Após ter o **Java** instalado, inicie o programa no seu editor de preferência e ele será inicializado no localhost:8080, assim poderá testar todos os endpoints contruídos:
 
-- Collection: 
+[Collection Postman](https://github.com/jackakemi/ADA-backend/blob/main/ADA-backend.postman_collection.json)
 
 
 ## **:star2: DESENVOLVEDORES**

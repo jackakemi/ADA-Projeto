@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "85b0d6e2-4480-46d2-8cf1-77be3dda1380",
+		"name": "ADA-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/postagem",
+			"item": [
+				{
+					"name": "/postagem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/postagem/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postagem_id\": 1,\r\n    \"descricaoPostagem\": \"Desenvolvedor Jr.\",\r\n    \"dataHora\": \"2021-03-04T03:38:03.378+00:00\",\r\n    \"link\": null,\r\n    \"usuario\": null,\r\n    \"tema\": {\r\n        \"id\": 1,\r\n        \"descricaoTema\": \"Front-end\",\r\n        \"tipoTema\": \"Vaga\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/potagem/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"potagem",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/postagem/descricao/{descricao}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagem/descricao/{descricao}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem",
+								"descricao",
+								"{descricao}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/postagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"descricaoPostagem\": \"Vaga back-end!\",\r\n    \"usuario\":{\r\n        \"id\": 1\r\n    } ,\r\n    \"tema\":{\r\n        \"id\": 1\r\n    } \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/postagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricaoPostagem\": \"Vaga front-end\",\r\n    \"usuario\":{\r\n        \"id\": 1\r\n    } ,\r\n    \"tema\":{\r\n        \"id\": 1\r\n    } \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/postagem/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/postagem/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagem",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/tema",
+			"item": [
+				{
+					"name": "/tema",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tema/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema/descricao/{descricao}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tema/tipo/{descricao}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"tipo",
+								"{descricao}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema/tipo/{tipo}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tema/tipo/{tipo}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"tipo",
+								"{tipo}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricaoTema\": \"Band-end\",\r\n    \"tipoTema\": \"vaga\"\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricaoTema\": \"Back-end\",\r\n    \"tipoTema\": \"vaga\"\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tema/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tema/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tema",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/usuario",
+			"item": [
+				{
+					"name": "/usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/cargo/{cargo}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/cargo/{cargo}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"cargo",
+								"{cargo}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/nome/{nome}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeCompleto\": \"Joana Silva\",\r\n    \"cargo\": \"Desenvolvedora Pleno\",\r\n    \"usuario\": \"joao@gmail.com\",\r\n    \"senha\": \"123456\",\r\n    \"link\": \" sdasdsad\",\r\n    \"foto\": \" asdsads\",\r\n    \"tipo\": \"normal \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/nome/{nome}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"nome",
+								"{nome}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeCompleto\": \"Joana Silva\",\r\n    \"cargo\": \"Desenvolvedora Pleno\",\r\n    \"usuario\": \"joanao@gmail.com\",\r\n    \"senha\": \"123456\",\r\n    \"link\": \" sdasdsad\",\r\n    \"foto\": \" asdsads\",\r\n    \"tipo\": \"normal \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/entrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic am9hb0BnbWFpbC5jb206MTIzNDU2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 2,\r\n        \"nomeCompleto\": \"Joana Silva\",\r\n        \"cargo\": \"Desenvolvedora Pleno\",\r\n        \"usuario\": \"joao@gmail.com\",\r\n        \"senha\": \"123456\",\r\n        \"link\": \" sdasdsad\",\r\n        \"postagem\": [],\r\n        \"foto\": \" asdsads\",\r\n        \"tipo\": \"normal \"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/entrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"entrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nomeCompleto\": \"Joana Silva Silva\",\r\n    \"cargo\": \"Desenvolvedora Pleno\",\r\n    \"usuario\": \"joanao@gmail.com\",\r\n    \"senha\": \"$2a$10$M9hEVZv/dzYC9k6mg6GpbuRJx3jo5CQtX9XtA2TEJMOKyuA/eOQZ.\",\r\n    \"link\": \" sdasdsad\",\r\n    \"postagem\": null,\r\n    \"foto\": \" asdsads\",\r\n    \"tipo\": \"normal \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuario/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

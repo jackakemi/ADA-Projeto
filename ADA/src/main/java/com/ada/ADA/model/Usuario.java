@@ -42,12 +42,15 @@ public class Usuario {
 	private String senha; // Será usado para segurança e entrada da usuária na rede social. Terá no máximo 20 caracteres
 	
 	@Size(min = 5, max = 2000)
-
 	private String link;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
+	
+	private String foto;
+	
+	private String tipo;
 	
 
 	//Início getters and setters
@@ -106,6 +109,22 @@ public class Usuario {
 
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	//Fim getters and setters
